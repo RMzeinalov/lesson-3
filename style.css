@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header{ 
+background-color: #1F2326;
+display: flex;
+justify-content: space-between;
+padding: 30px 80px;
+
+
+
+}
+.btn-cart{ 
+    background-color: #fafafa;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    color: #2f2a2d;
+    border-radius: 5px;
+    transition: all ease-in-out .4s;
+    cursor: pointer;
+}
+.btn-cart:hover{
+    background-color: transparent;
+    border-color: #fafafa;
+    color: #fafafa;
+
+}
+
+.buy-btn:hover{
+    background-color: transparent;
+    border-color: red;
+    color: black;
+    
+ }
+@media (max-width: 1200px) {
+    .container {
+        margin: 0 auto;
+        width: 1200px;
+    }
+}
+.products { 
+    column-gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    grid-template-rows: 1fr;
+    padding: 40px 80px;
+    justify-content: space-between;
+}
+
+.product-item{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    border-radius: 5px;
+   
+    margin: 20px 0;
+}
+
+
+
+
+.product-item img { 
+    max-width: 600px;
+ 
+    
+
+    
+    
+    
+    
+    
+    
+    
+}
+.product-item button{ 
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 10px;
+line-height: 17px;
+text-align: center;
+background-color: #1F2326;
+border: 1px solid #FF4656;
+border-radius: 6px;
+width:100px;
+height:50px;
+color: wheat;
+}
+
+.basket {
+    position: absolute;
+    z-index: 3;
+    right: 0;
+    top: 37px;
+    background: white;
+    padding: 10px;
+    border: 1px solid #ebebeb;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+@media (min-width: 340px) {
+    .basket {
+        font-size: 16px;
+    }
+}
+@media (min-width: 552px) {
+    .basket {
+        width: 500px;
+    }
+}
+
+.basketRow {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 10px;
+}
+
+.basketHeader {
+    font-weight: bold;
+}
+
+.basketTotal {
+    font-weight: bold;
+    text-align: right;
+}
